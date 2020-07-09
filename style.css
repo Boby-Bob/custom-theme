@@ -1,0 +1,156 @@
+/*
+Theme Name:   Custom Theme
+Description:  Custom Theme
+Author:       kevin
+Author URI:   https://github.com/Boby-Bob/
+Version:      1.0.0
+*/
+
+body {
+    color: rgb(0, 227, 235);
+    text-align: center;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+header img {
+    width: 200px;
+    height: 200px;
+}
+header h1 {
+    text-align: right;
+    background-color: #1E4F8A;
+    color: white;
+    height: min-content;
+    text-transform: uppercase;
+    background-color: #1E4F8A;
+    color: white;
+    height: min-content;
+    font-family: 'Playfair Display', serif;
+    padding: 5px;
+}
+a {
+    color: cyan;
+    transition-duration: 0.2s !important;
+}
+.btn-primary {
+    background-color: rgba(30, 79, 138, 1) !important;
+    border: none !important;
+}
+.btn-primary:hover {
+    background-color: white !important;
+    color: rgba(30, 79, 138, 1) !important;
+    border: 1px solid rgba(30, 79, 138, 1) !important;
+}
+.logo {
+    width: 200px;
+    height: 200px;
+}
+.navbar-collapse {
+    justify-content: center;
+}
+.nav {
+    margin: 30px;
+    border-top: 2px solid rgba(30, 79, 138, 0.8);
+    border-bottom: 2px solid rgba(30, 79, 138, 0.8);
+}
+.nav-item>.nav-link {
+    color: #BFB000 !important;
+    font-weight: 500;
+    font-size: large;
+    font-family: 'Playfair Display', serif;
+}
+.title {
+    text-transform: uppercase;
+    background-color: #1E4F8A;
+    color: white;
+    height: min-content;
+    font-family: 'Playfair Display', serif;
+}
+.title__gallery, .title__benefits {
+    color: rgb(14, 177, 163);
+    text-align: center;
+    padding-bottom: 40px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+  
+  .benefits__separator {
+    display: none;
+  }
+  @media screen and (min-width: 720px) {
+    .benefits__separator {
+      display: block;
+      margin: 0 auto;
+      margin-top: 60px;
+      height: 200px;
+      width: 2px;
+      background-color: rgb(30, 79, 138);
+    }
+  }
+  
+  .benefits__separator--horizontal {
+    display: none;
+  }
+  @media screen and (min-width: 720px) {
+    .benefits__separator--horizontal {
+      display: block;
+      border: 1px solid rgb(30, 79, 138);
+      width: 100%;
+      height: 1px;
+      margin-bottom: 50px;
+    }
+  }
+  
+  .btn-primary {
+    width: 180px;
+    background-color: rgba(30, 79, 138, 0.9) !important;
+    border: 1px solid rgb(30, 79, 138);
+    margin-top: 30px;
+  }
+  
+  .benefits__separator--last {
+    width: 100%;
+    height: 2px;
+    margin: 50px;
+    background-color: rgb(30, 79, 138);
+  }
+  
+  .benefits__container {
+    display: flex;
+    margin: 20px 0px 80px 0px;
+  }
+  
+  .benefits__body {
+    padding: 30px;
+  }
+  .benefits__picture {
+      background: url(images/bebe.jpg);
+  }
+  .picture {
+    width: 100%;
+    height: 100%;
+    background-position: ;
+    background-size: cover;
+    border-radius: 1rem;
+  }
+  .benefits__separator--horizontal {
+      background-color: rgb(30, 79, 138);
+  }
+  .benefits__body {
+    padding: 30px;
+  }
+  
+  /* GALLERY */
+  
+  .carousel-control-prev {
+    width: 60px;
+  }
+  
+  .carousel-control-next {
+    width: 60px;
+  }

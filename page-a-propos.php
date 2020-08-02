@@ -33,7 +33,9 @@ get_header();
         cumque sunt repudiandae voluptatem officiis, aut magnam consequatur
         autem adipisci velit accusamus doloribus ipsa natus.
       </p>
-
-      <div class="benefits__separator--last"></div>
     </div>
   </div>
+
+<?php
+  get_footer();
+?>

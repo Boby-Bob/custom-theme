@@ -5,24 +5,26 @@ get_header();
 ?>
 
 <div class="container">
-<section class="benefits container">
+<section class="all_benefits">
         
 <h1 class="title__benefits">Nos Prestations</h1>
 
-<div class="row">
+<div class="row benefit text-center">
   <div class="col-md-5">
+    <h5 class="benefits__title">Le thalasso bain bébé</h5>
     <div class="benefits__container">
       <div class="benefits__picture">
-        <img src="wp-content/uploads/2020/06/bebe.jpg" class="picture" alt="..." />
+        <div class="benefits__picture__img"></div>
       </div>
       <div class="benefits__body">
-        <h5 class="benefits__title">Lorem ipsum</h5>
         <p class="benefits__text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
-        unde eligendi ullam eum omnis hic libero laborum, pariatur
-        consequuntur non
+        C'est le plus beau des cadeaux de bienvenue au monde. Bébé retrouve les postures, les sensations qu'il avait in utero. Il se libère des tensions à la grossesse et à la naissance.
         </p>
-        <a href="#" class="btn btn-primary">Plus de détails</a>
+        <button type="text" class="btn btn-primary details presta--one">Plus de détails</button>
+        <?php
+
+        global $product; $id = $product->id; ?>
+        <a class="btn btn-primary" href="http://pro-dev.fr/www/b-a-m/?add-to-cart=28<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
       </div>
         
     </div>
@@ -33,39 +35,52 @@ get_header();
   </div>
 
   <div class="col-md-5">
+    <h5 class="benefits__title">L'atelier massage bébé</h5>
     <div class="benefits__container">
       <div class="benefits__picture">
-        <img src="wp-content/uploads/2020/06/bebe.jpg" class="picture" alt="..." />
+        <div class="benefits__picture__img"></div>
       </div>
       <div class="benefits__body">
-        <h5 class="benefits__title">Lorem ipsum</h5>
         <p class="benefits__text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
-        unde eligendi ullam eum omnis hic libero laborum, pariatur
-        consequuntur non
+        Apprenez à masser votre bébé pour créer, entretenir le lien d'attachement avec lui et lui apporter confiance, sécurité, détente, éveil.
         </p>
-        <a href="#" class="btn btn-primary">Plus de détails</a>
+        <button type="text" class="btn btn-primary details presta--two">Plus de détails</button>
+        <?php
+
+        global $product; $id = $product->id; ?>
+        <a class="btn btn-primary" href="http://pro-dev.fr/www/b-a-m/?add-to-cart=66<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
+
       </div>
         
     </div>
   </div>
 
 </div>
+
 <div class="benefits__separator--horizontal"></div>
+
+<div class="presta">
+</div>
+
+<div id="presta_separator"></div>
+
     
-<div class="row">
+<div class="row benefit text-center">
     <div class="col-md-5">
+      <h5 class="benefits__title">Le massage future maman</h5>
       <div class="benefits__container">
         <div class="benefits__picture">
+          <div class="benefits__picture__img"></div>
         </div>
         <div class="benefits__body">
-          <h5 class="benefits__title">Lorem ipsum</h5>
           <p class="benefits__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
-          unde eligendi ullam eum omnis hic libero laborum, pariatur
-          consequuntur non
+          Le massage prénatal est l'un des meilleurs moyens de se relaxer sur le plan physique et émotionnel. Il peut être reçu comme un véritable accompagnement à la maternité.
           </p>
-          <a href="#" class="btn btn-primary">Plus de détails</a>
+          <button type="text" class="btn btn-primary details presta--three">Plus de détails</button>
+          <?php
+
+          global $product; $id = $product->id; ?>
+          <a class="btn btn-primary" href="http://pro-dev.fr/www/b-a-m/?add-to-cart=66<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
         </div>
           
       </div>
@@ -76,23 +91,27 @@ get_header();
     </div>
 
     <div class="col-md-5">
+      <h5 class="benefits__title">L'atelier de soutien à l'allaitement maternel</h5>
       <div class="benefits__container">
         <div class="benefits__picture">
-          <img src="wp-content/uploads/2020/06/bebe.jpg" class="picture" alt="..." />
+          <div class="benefits__picture__img"></div>
         </div>
         <div class="benefits__body">
-          <h5 class="benefits__title">Lorem ipsum</h5>
           <p class="benefits__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
-          unde eligendi ullam eum omnis hic libero laborum, pariatur
-          consequuntur non
+          Pour vous épanouir dans votre projet d'allaitement, vous souhaitez des informations claires, des astuces, de l'écoute. Abordons ensemble les sujets clés pour vous.
           </p>
-          <a href="#" class="btn btn-primary">Plus de détails</a>
+          <button type="text" class="btn btn-primary details presta--four">Plus de détails</button>
+          <?php
+
+          global $product; $id = $product->id; ?>
+          <a class="btn btn-primary" href="http://pro-dev.fr/www/b-a-m/?add-to-cart=69<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
         </div>
+        <ul class="products">
+</ul>
           
       </div>
     </div>
-    <div class="benefits__separator--last"></div>
+    <div class="benefits__separator--horizontal"></div>
 
 </section>
 </div>
@@ -127,53 +146,4 @@ get_header();
 </section>
 
 <?php
-
-// WP_Query arguments
-$args = [
-    'post_type' => [ 'page' ],
-];
-
-// The Query
-$query = new WP_Query( $args );
-
-if ( $query->have_posts() ):
-    while ($query->have_posts()):
-        $query->the_post();
-?>
-    <article>
-        <h3><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h3>
-    </article>
-<?php
-    endwhile;
-endif;
-
-// Restore original Post Data
-wp_reset_postdata();
-
-?>
-<h2>liste des posts</h2>
-<?php
-
-// WP_Query arguments
-$args = [
-    'post_type' => [ 'post' ],
-];
-
-// The Query
-$query = new WP_Query( $args );
-
-if ( $query->have_posts() ):
-    while ($query->have_posts()):
-        $query->the_post();
-?>
-    <article>
-        <h3><a href="<?= get_permalink(); ?>"><?php the_title(); ?></a></h3>
-    </article>
-<?php
-    endwhile;
-endif;
-
-// Restore original Post Data
-wp_reset_postdata();
-
 get_footer();

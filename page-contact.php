@@ -59,8 +59,10 @@ get_header();
             <div class="contact__phone col-md-5">
                 <p>03.60.30.20.10</p>
             </div>
-
-        <div class="contact__separator--last"></div>
     </div>
 
 </div>
+
+<?php
+  get_footer();
+?>

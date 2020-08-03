@@ -85,6 +85,9 @@ a {
   text-align: center;
   vertical-align: middle;
   font-family: 'papyrus';
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
 }
 .title__gallery,
 .title__benefits {
@@ -115,6 +118,9 @@ a {
 }
 .benefits__body {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .benefits__picture {
   display: flex;
@@ -124,7 +130,7 @@ a {
 }
 .benefits__picture__img {
   width: 250px;
-  height: 100%;
+  height: 400px;
   background: url("../../uploads/2020/06/bebe.jpg");
   background-size: cover;
   background-position: -120px;
@@ -239,7 +245,11 @@ h2 {
   margin: 40px auto 0px;
   display: block;
 }
-
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
 .button1 {
   color: #fff;
   width: 100%;
@@ -250,7 +260,7 @@ h2 {
   font-family: 'tempsitc';
   background-color: rgba(30, 90, 138, 1);
   border: 1px solid rgb(30, 90, 138) !important;
-  margin: 30px;
+  margin: 30px auto;
 }
 
 .button1:hover {

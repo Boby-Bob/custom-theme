@@ -18,7 +18,7 @@
 <body>
 <header class="container">
     <div class="row d-flex justify-content-between align-items-center">
-        <img src="wp-content/uploads/2020/06/Bienvenue-au-monde-Logo-HD-Copie.jpg" alt="">
+        <img src="http://pro-dev.fr/www/b-a-m/wp-content/uploads/2020/06/Bienvenue-au-monde-Logo-HD-Copie.jpg" alt="">
         <h1 class="title">Bienvenue au Monde</h1>
     </div>
 </header>
@@ -30,19 +30,17 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="menu navbar-nav nav justify-content-center">
                 <li class="menu-item nav-item mx-5">
-                  <a class="nav-link active" href="/">Accueil</a>
+                  <a class="nav-link active" href="index.php">Accueil</a>
                 </li>
                 <li class="menu-item nav-item mx-5">
-                  <a class="nav-link" href="/a-propos">A Propos</a>
+                  <a class="nav-link" href="index.php/a-propos">A Propos</a>
                 </li>
                 <li class="menu-item nav-item mx-5">
-                  <a class="nav-link" href="/#galerie">Galerie</a>
+                  <a class="nav-link" href="index.php/#galerie">Galerie</a>
                 </li>
                 <li class="menu-item nav-item mx-5">
-                  <a class="nav-link" href="/contact">Contact</a>
+                  <a class="nav-link" href="index.php/contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-    

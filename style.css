@@ -6,9 +6,19 @@ Author URI:   https://github.com/Boby-Bob/
 Version:      1.0.0
 */
 
+@font-face {
+  font-family: ‘papyrus‘;
+  src: url(‘fonts/PAPYRUS.TTF’) format(‘truetype’);
+}
+@font-face {
+  font-family: 'tempsitc';
+  src: url(‘fonts/TEMPSITC.TTF’) format(‘truetype’);
+}
+
 body {
   color: rgb(0, 227, 235);
   text-align: center;
+  margin: 0;
 }
 header {
   display: flex;
@@ -21,25 +31,28 @@ header img {
   width: 200px;
   height: 200px;
 }
-header h1 {
+.title {
+  background-color: #1e4f8a;
+  color: white;
+  height: min-content;
   text-align: right;
-  background-color: #1e4f8a;
-  color: white;
-  height: min-content;
-  text-transform: uppercase;
-  background-color: #1e4f8a;
-  color: white;
-  height: min-content;
-  font-family: "Playfair Display", serif;
   padding: 5px;
+  font-family: 'papyrus';
+  font-size: 3rem;
+  border-radius: 4px;
 }
 a {
   color: cyan;
   transition-duration: 0.2s !important;
 }
 .btn-primary {
-  background-color: rgba(30, 79, 138, 1) !important;
+  background-color: rgba(30, 90, 138, 1) !important;
   border: none !important;
+  border: 1px solid rgb(30, 90, 138) !important;
+  width: 180px;
+  margin-top: 30px;
+  font-family: "tempsitc";
+
 }
 .btn-primary:hover {
   background-color: rgba(30, 79, 138, 1) !important;
@@ -62,88 +75,78 @@ a {
   color: #bfb000 !important;
   font-weight: 500;
   font-size: large;
-  font-family: "Playfair Display", serif;
+  font-family: "tempsitc";
 }
-.title {
-  text-transform: uppercase;
-  background-color: #1e4f8a;
-  color: white;
-  height: min-content;
-  font-family: "Playfair Display", serif;
+.benefits__title {
+  color: #bfb000;
+  font-size: 1.8rem;
+  margin: 30px;  
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'papyrus';
+  display: flex;
+  white-space: nowrap;
+  justify-content: center;
 }
 .title__gallery,
 .title__benefits {
   color: rgb(14, 177, 163);
   text-align: center;
-  padding-bottom: 40px;
   text-decoration: underline;
-  margin-top: 20px;
+  font-family: "tempsitc";
 }
-
+.title__gallery {
+  margin-bottom: 60px;
+}
+.title__benefits {
+  margin: 60px auto;
+}
 .benefits__separator {
-  display: none;
-}
-@media screen and (min-width: 720px) {
-  .benefits__separator {
-    display: block;
-    margin: 0 auto;
-    margin-top: 60px;
-    height: 200px;
-    width: 2px;
-    background-color: rgb(30, 79, 138);
-  }
-}
-
-.benefits__separator--horizontal {
-  display: none;
-}
-@media screen and (min-width: 720px) {
-  .benefits__separator--horizontal {
-    display: block;
-    border: 1px solid rgb(30, 79, 138);
-    width: 100%;
-    height: 1px;
-    margin-bottom: 50px;
-  }
-}
-
-.btn-primary {
-  width: 180px;
-  background-color: rgba(30, 79, 138, 0.9) !important;
-  border: 1px solid rgb(30, 79, 138);
-  margin-top: 30px;
-}
-
-.benefits__separator--last {
-  width: 100%;
-  height: 2px;
-  margin: 50px;
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 2px;
   background-color: rgb(30, 79, 138);
 }
-
 .benefits__container {
   display: flex;
-  margin: 20px 0px 80px 0px;
 }
-
+.benefit {
+  display: flex;
+  align-items: center;
+}
 .benefits__body {
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .benefits__picture {
-  background: url(images/bebe.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  align-content: center;
+}
+.benefits__picture__img {
+  width: 250px;
+  height: 400px;
+  background: url("../../uploads/2020/06/bebe.jpg");
+  background-size: cover;
+  background-position: -120px;
 }
 .picture {
   width: 100%;
   height: 100%;
-  background-position: ;
   background-size: cover;
   border-radius: 1rem;
 }
 .benefits__separator--horizontal {
-  background-color: rgb(30, 79, 138);
-}
-.benefits__body {
-  padding: 30px;
+  display: block;
+  border: 1px solid rgb(30, 79, 138);
+  width: 80%;
+  height: 1px;
+  margin: 60px auto;
 }
 
 .benefits__year {
@@ -159,6 +162,10 @@ a {
 .carousel-control-next {
   width: 60px;
 }
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  height: 50px !important;
+  width: 50px !important;
+}
 /* ABOUT */
 
 .about__title {
@@ -167,6 +174,7 @@ a {
   padding-bottom: 40px;
   text-decoration: underline;
   margin-top: 20px;
+  font-family: 'tempsitc';
 }
 
 .about__container {
@@ -193,96 +201,6 @@ p {
 }
 
 /* CONTACT */
-/*
-.contact__title {
-  color: rgb(14, 177, 163);
-  text-align: center;
-  padding-bottom: 40px;
-  text-decoration: underline;
-  margin-top: 20px;
-}
-
-.heading {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-h2 {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-}
-
-.contact__form {
-  font-size: 20px;
-  background: #fff;
-  padding: 40px;
-  border-radius: 10px;
-}
-
-.blue {
-  color: rgb(30, 79, 138);
-}
-
-.form-control {
-  height: 50px;
-  font-size: 18px;
-}
-
-.comments {
-  font-style: italic;
-  font-size: 18px;
-  color: #d82c2e;
-  height: 25px;
-}
-
-#contact-form input[type="submit"] {
-  margin: 40px auto 0px;
-  display: block;
-}
-
-.button1 {
-  background-color: rgba(30, 79, 138, 0.7);
-  border: 1px solid rgb(30, 79, 138);
-  color: #fff;
-  width: 100%;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 18px;
-  border-radius: 5px;
-}
-
-.button1:hover {
-  background: #333;
-}
-
-.thank-you {
-  text-align: center;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.contact__email,
-.contact__phone {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.contact__separator--contact {
-  background-color: rgb(30, 79, 138);
-  margin: 0 auto;
-  height: 100px;
-  width: 2px;
-}
-
-.contact__separator--last {
-  background-color: rgb(30, 79, 138);
-  width: 100%;
-  height: 1px;
-  margin: 50px;
-}
-*/
 
 .contact__title {
   color: rgb(14, 177, 163);
@@ -376,4 +294,134 @@ h2 {
 
 textarea {
   width: 920px !important;
+}
+
+/* RESEAUX */
+
+.reseaux__container {
+  background-color: rgb(30, 79, 138);
+  width: 200px;
+  margin: 30px auto 0px auto;
+  border-radius: 4px;
+}
+
+.reseaux {
+  display: flex;
+  justify-content: center;
+}
+
+.facebook__icon {
+  width: 80px;
+  height: 80px;
+}
+
+.instagram__icon {
+  width: 80px;
+  height: 80px;
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 50px;
+  background-color: rgb(30, 90, 138);
+  height: 50px;
+  text-align: center;
+  font-family: "tempsitc";
+}
+
+.footer__title {
+  position: relative;
+  bottom: 10px;
+  margin: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.footer__mentions {
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.footer__mentions:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* PRESTATIONS */
+
+.presta {
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px;
+  justify-content: space-between;
+}
+
+.bienfaits {
+background-color: rgb(14, 177, 163);
+height: 190px;
+width: 320px;
+border-radius: 4px;
+text-align: center;
+padding: 10px;
+
+}
+
+.deroulement {
+  position: relative;
+  right: 10px;
+  bottom: 10px;
+  background-color: #1e4F8a;
+  height: 190px;
+  width: 320px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+}
+
+.prix {
+position: relative;
+left: 60px;
+bottom: 30px;
+background-color: #bfb000;
+height: 150px;
+width: 150px;
+border-radius: 90px;
+text-align: center;
+padding: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.contreIndications {
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  background-color: #0eb1a3;
+  height: 140px;
+  width: 260px;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+
+}
+
+.bienfaits--title, .deroulement--title, .contreIndications--title {
+font-size: 20px;
+margin: 10px;
+color: white;
+}
+
+.bienfaits--content, .deroulement--content, .contreIndications--content, .prix--content {
+  margin: 10px;
+}
+
+.prix--content {
+font-size: 20px;
+font-weight: 500;
+color: #fff;
 }

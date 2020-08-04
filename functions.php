@@ -17,8 +17,13 @@ add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
  */
 
 // cette fonction se charge d'intégrer les scripts JS du thème
-function my_theme_enqueue_script() {
+function enqueue_mon_script() {
     // chargement du script JS du thème
-    wp_enqueue_script( 'my-theme-main', get_stylesheet_directory_uri().'/js/main.js', [] );
+    wp_enqueue_script( 'script-perso', get_stylesheet_directory_uri().'/js/main.js', [] );
 }
-add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_script' );
+add_action( 'wp_enqueue_scripts', 'enqueue_mon_script' );
+
+function mytheme_add_woocommerce_support() {
+	add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );

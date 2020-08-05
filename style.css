@@ -55,9 +55,9 @@ a {
 
 }
 .btn-primary:hover {
-  background-color: white !important;
-  color: rgba(30, 79, 138, 1) !important;
-  border: 1px solid rgba(30, 79, 138, 1) !important;
+  background-color: rgba(30, 79, 138, 1) !important;
+  color: white !important;
+  border: 1px solid white !important;
 }
 .logo {
   width: 200px;
@@ -148,6 +148,11 @@ a {
   height: 1px;
   margin: 60px auto;
 }
+
+.benefits__year {
+  font-style: italic;
+}
+
 /* GALLERY */
 
 .carousel-control-prev {
@@ -203,7 +208,6 @@ p {
   padding-bottom: 40px;
   text-decoration: underline;
   margin-top: 20px;
-  font-family: 'tempsitc';
 }
 
 .heading {
@@ -222,64 +226,43 @@ h2 {
   background: #fff;
   padding: 40px;
   border-radius: 10px;
-  font-family: "tempsitc";
 }
 
 .blue {
   color: rgb(30, 79, 138);
 }
 
-.form-control {
+.wpcf7-form label {
   height: 50px;
   font-size: 18px;
-}
-
-.comments {
-  font-style: italic;
-  font-size: 18px;
-  color: #d82c2e;
-  height: 25px;
+  width: 100% !important;
 }
 
 #contact-form input[type="submit"] {
   margin: 40px auto 0px;
   display: block;
 }
-.buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-.button1 {
-  color: #fff;
+
+.wpcf7-submit {
+  background-color: rgba(30, 79, 138, 0.7) !important;
+  border: 1px solid rgb(30, 79, 138) !important;
+  color: #fff !important;
   width: 100%;
   font-weight: bold;
   text-transform: uppercase;
   padding: 18px;
   border-radius: 5px;
-  font-family: 'tempsitc';
-  background-color: rgba(30, 90, 138, 1);
-  border: 1px solid rgb(30, 90, 138) !important;
-  margin: 30px auto;
+  margin-top: 350px !important;
+  margin-left: -550px !important;
+  width: 920px;
 }
 
-.button1:hover {
-  background-color: white !important;
-  color: rgba(30, 79, 138, 1) !important;
-  border: 1px solid rgba(30, 79, 138, 1) !important;
-}
-
-.thank-you {
-  text-align: center;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.contact__email,
-.contact__phone {
-  text-align: center;
+.your-phone,
+.your-email,
+.your-lastname,
+.your-firstname {
   margin-top: 30px;
+  width: 100% !important;
 }
 
 .contact__separator--contact {
@@ -296,7 +279,22 @@ h2 {
   margin: 50px;
 }
 
+.wpcf7-form {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.wpcf7-form p {
+  width: 50% !important;
+}
+
+.wpcf7-form p :nth-child(4n) {
+  width: 100% !important;
+}
+
+textarea {
+  width: 920px !important;
+}
 
 /* RESEAUX */
 

@@ -27,3 +27,13 @@ function mytheme_add_woocommerce_support() {
 	add_theme_support( 'woocommerce' );
 }
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
+
+
+add_theme_support('nav-menus'); // je préviens wordpress que je veux utiliser les menus.
+register_nav_menus(array(// enregistrement des menus
+ 'primary' => 'Navigation principale' // ici mon menu principal
+));
+// Menu de navigation spécial
+register_nav_menus(array(
+    'spécial' => 'Menu spécial)'
+));

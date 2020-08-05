@@ -32,29 +32,26 @@ header img {
   height: 200px;
 }
 .title {
-  background-color: #1e4f8a;
-  color: white;
+  color: rgb(30, 79, 138);
   height: min-content;
-  text-align: right;
+  text-align: center;
   padding: 5px;
   font-family: 'papyrus';
-  font-size: 3rem;
+  font-size: 5rem;
   border-radius: 4px;
+
 }
 a {
   color: cyan;
   transition-duration: 0.2s !important;
 }
-.btn-primary {
-  background-color: rgba(30, 90, 138, 1) !important;
-  border: none !important;
-  border: 1px solid rgb(30, 90, 138) !important;
+.details, .commands {
+  background-color: rgb(30, 79, 138) !important;
   width: 180px;
   margin-top: 30px;
   font-family: "tempsitc";
-
 }
-.btn-primary:hover {
+.details:hover, .commands:hover {
   background-color: white !important;
   color: rgba(30, 79, 138, 1) !important;
   border: 1px solid rgba(30, 79, 138, 1) !important;
@@ -66,12 +63,19 @@ a {
 .navbar-collapse {
   justify-content: center;
 }
-.nav {
+.nav, .menu {
   margin: 30px;
   border-top: 2px solid rgba(30, 79, 138, 0.8);
   border-bottom: 2px solid rgba(30, 79, 138, 0.8);
 }
 .nav-item > .nav-link {
+  color: #bfb000 !important;
+  font-weight: 500;
+  font-size: large;
+  font-family: "tempsitc";
+}
+
+.menu-item > a {
   color: #bfb000 !important;
   font-weight: 500;
   font-size: large;
@@ -203,7 +207,6 @@ p {
   padding-bottom: 40px;
   text-decoration: underline;
   margin-top: 20px;
-  font-family: 'tempsitc';
 }
 
 .heading {
@@ -222,64 +225,50 @@ h2 {
   background: #fff;
   padding: 40px;
   border-radius: 10px;
-  font-family: "tempsitc";
 }
 
 .blue {
   color: rgb(30, 79, 138);
 }
 
-.form-control {
+.wpcf7-form label {
   height: 50px;
   font-size: 18px;
-}
-
-.comments {
-  font-style: italic;
-  font-size: 18px;
-  color: #d82c2e;
-  height: 25px;
+  width: 100% !important;
 }
 
 #contact-form input[type="submit"] {
   margin: 40px auto 0px;
   display: block;
 }
-.buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-}
-.button1 {
-  color: #fff;
+
+.wpcf7-submit {
+  background-color: rgba(30, 79, 138) !important;
+  border: 1px solid rgb(30, 79, 138) !important;
+  color: #fff !important;
   width: 100%;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 18px;
+  padding: 18px !important;
   border-radius: 5px;
+  margin-top: 350px !important;
+  margin-left: -550px !important;
+  width: 1030px;
   font-family: 'tempsitc';
-  background-color: rgba(30, 90, 138, 1);
-  border: 1px solid rgb(30, 90, 138) !important;
-  margin: 30px auto;
 }
 
-.button1:hover {
+.wpcf7-submit:hover {
   background-color: white !important;
   color: rgba(30, 79, 138, 1) !important;
   border: 1px solid rgba(30, 79, 138, 1) !important;
 }
 
-.thank-you {
-  text-align: center;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 22px;
-}
-
-.contact__email,
-.contact__phone {
-  text-align: center;
+.your-phone,
+.your-email,
+.your-lastname,
+.your-firstname {
   margin-top: 30px;
+  width: 100% !important;
 }
 
 .contact__separator--contact {
@@ -296,6 +285,29 @@ h2 {
   margin: 50px;
 }
 
+.wpcf7-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  width: min-content;
+}
+
+.wpcf7-form p {
+  width: 50% !important;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.wpcf7-form p :nth-child(4n) {
+  width: 100% !important;
+}
+
+textarea {
+  width: 1030px !important;
+}
 
 
 /* RESEAUX */
@@ -326,7 +338,7 @@ h2 {
 
 .footer {
   margin-top: 50px;
-  background-color: rgb(30, 90, 138);
+  background-color: rgb(30, 79, 138);
   height: 50px;
   text-align: center;
   font-family: "tempsitc";
@@ -413,17 +425,20 @@ justify-content: center;
 }
 
 .bienfaits--title, .deroulement--title, .contreIndications--title {
-font-size: 20px;
+font-size: 25px;
 margin: 10px;
 color: white;
+font-family: 'papyrus';
 }
 
 .bienfaits--content, .deroulement--content, .contreIndications--content, .prix--content {
   margin: 10px;
+  font-family: 'tempsitc';
 }
 
 .prix--content {
 font-size: 20px;
 font-weight: 500;
 color: #fff;
+font-family: 'tempsitc';
 }

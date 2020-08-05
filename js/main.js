@@ -5,7 +5,8 @@ jQuery(document).ready(function() {
     let buttons = document.querySelectorAll(".details");
     let separator = document.createElement("div");
     let prestaSeparator = document.querySelector("#presta_separator");
-
+    let benefits = document.querySelector(".benefit");
+    let buttonForm = document.querySelector(".wpcf7-submit");
     separator.className = 'benefits__separator--horizontal';
 
 
@@ -64,6 +65,7 @@ jQuery(document).ready(function() {
                 bienfaits.appendChild(contentBienfaits);
                 prix.appendChild(contentPrix);
                 prestaSeparator.className = 'benefits__separator--horizontal';
+                presta.scrollIntoView({block: "center"});
             }
             else if (i >= 2) {
                 presta.style.margin = "auto";
@@ -73,6 +75,7 @@ jQuery(document).ready(function() {
                 presta.removeChild(contreIndications);
                 prestaSeparator.className = '';
                 i = 0;
+                benefits.scrollIntoView();
             }
 
             if (event.target === buttons[0]) {

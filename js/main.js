@@ -6,7 +6,13 @@ jQuery(document).ready(function() {
     let separator = document.createElement("div");
     let prestaSeparator = document.querySelector("#presta_separator");
     let benefits = document.querySelector(".benefit");
-    let buttonForm = document.querySelector(".wpcf7-submit");
+    if (document.querySelector(".wpcf7-submit")) {
+        let buttonForm = document.querySelector(".wpcf7-submit");
+        buttonForm.className += " btn";
+    }
+    else {
+        console.log(" ");
+    }
     separator.className = 'benefits__separator--horizontal';
 
 
@@ -79,7 +85,7 @@ jQuery(document).ready(function() {
             }
 
             if (event.target === buttons[0]) {
-                contentBienfaits.textContent = 'presta 1';
+                contentBienfaits.textContent = 'Le thalasso bain bébé est une douce transition entre le monde intra utérin et le monde extérieur. Il : -libère les tensions, les émotions liées à la grossesse et à la naissance -réduit le stress de l’arrivée au monde -procure un bien-être incomparable au bébé et à ses parents -adoucit particulièrement les naissances éprouvantes ';
                 contentPrix.textContent = "75€";
             }
             else if (event.target === buttons[1]) {

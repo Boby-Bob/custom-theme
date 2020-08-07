@@ -25,7 +25,7 @@ get_header();
           <?php
 
           global $product; $id = $product->id; ?>
-          <a class="btn btn-primary commands" href="http://bienvenue-au-monde.fr/?add-to-cart=28<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
+          <a class="btn btn-primary commands" href="https://bienvenue-au-monde.fr/?add-to-cart=28<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
         </div>
       </div>
         
@@ -52,7 +52,7 @@ get_header();
           <?php
 
           global $product; $id = $product->id; ?>
-          <a class="btn btn-primary commands" href="http://bienvenue-au-monde.fr/?add-to-cart=66<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
+          <a class="btn btn-primary commands" href="https://bienvenue-au-monde.fr/?add-to-cart=66<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
         </div>
       </div>
         
@@ -85,7 +85,7 @@ get_header();
             <?php
 
             global $product; $id = $product->id; ?>
-            <a class="btn btn-primary commands" href="http://bienvenue-au-monde.fr/?add-to-cart=68<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
+            <a class="btn btn-primary commands" href="https://bienvenue-au-monde.fr/?add-to-cart=68<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
           </div>
         </div>
           
@@ -111,7 +111,7 @@ get_header();
             <?php
 
             global $product; $id = $product->id; ?>
-            <a class="btn btn-primary commands" href="http://bienvenue-au-monde.fr/?add-to-cart=69<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
+            <a class="btn btn-primary commands" href="https://bienvenue-au-monde.fr/?add-to-cart=69<?php echo $id ?>"><?php _e('Commander', 'textdomain'); ?></a>
           </div>
         </div>
         <ul class="products">

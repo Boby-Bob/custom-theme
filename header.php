@@ -19,7 +19,7 @@
 <body>
 <header class="container">
     <div class="row d-flex justify-content-between align-items-center">
-        <img src="http://bienvenue-au-monde.fr/wp-content/uploads/2020/06/Bienvenue-au-monde-Logo-HD-Copie.jpg" alt="">
+        <img src="https://bienvenue-au-monde.fr/wp-content/uploads/2020/06/Bienvenue-au-monde-Logo-HD-Copie.jpg" alt="">
         <h1 class="title">Bienvenue au monde</h1>
     </div>
 </header>

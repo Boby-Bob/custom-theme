@@ -370,27 +370,29 @@ textarea {
 .presta {
   display: flex;
   flex-wrap: wrap;
-  width: 900px;
+  width: 1280px;
   justify-content: space-between;
 }
 
 .bienfaits {
 background-color: rgb(14, 177, 163);
-height: 267px;
-width: 450px;
+height: 324px;
+width: 550px;
 border-radius: 4px;
 text-align: center;
 padding: 10px;
-
+position: relative;
+top: 35px;
+right: 50px;
 }
 
 .deroulement {
   position: relative;
-  right: 10px;
+  right: 60px;
   bottom: 10px;
   background-color: #1e4F8a;
-  height: 267px;
-  width: 450px;
+  height: 432px;
+  width: 730px;
   border-radius: 4px;
   text-align: center;
   padding: 10px;
@@ -398,26 +400,27 @@ padding: 10px;
 
 .prix {
 position: relative;
-left: 60px;
-bottom: 30px;
+bottom: 50px;
+left: 50px;
 background-color: #bfb000;
-height: 180px;
-width: 180px;
-border-radius: 90px;
+height: 280px;
+width: 280px;
+border-radius: 190px;
 text-align: center;
 padding: 10px;
 display: flex;
 align-items: center;
 justify-content: center;
+z-index: -1;
 }
 
 .contreIndications {
   position: relative;
   bottom: 10px;
-  right: 10px;
+  right: 135px;
   background-color: #0eb1a3;
-  height: 196px;
-  width: 365px;
+  height: 267px;
+  width: 500px;
   border-radius: 4px;
   text-align: center;
   padding: 10px;
@@ -425,20 +428,24 @@ justify-content: center;
 }
 
 .bienfaits--title, .deroulement--title, .contreIndications--title {
-font-size: 25px;
-margin: 10px;
+font-size: 2rem;
+margin: 10px auto 30px;
 color: white;
 font-family: 'papyrus';
 }
 
 .bienfaits--content, .deroulement--content, .contreIndications--content, .prix--content {
-  margin: 10px;
+  margin: 20px;
   font-family: 'tempsitc';
+  text-align: start;
+}
+
+.bienfaits--content--span {
+  text-align: end;
 }
 
 .prix--content {
 font-size: 20px;
 font-weight: 500;
 color: #fff;
-font-family: 'tempsitc';
 }

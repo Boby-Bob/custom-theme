@@ -4,9 +4,9 @@
     <div class="reseaux__container">
       <div class="reseaux">
         <a class="facebook" href="https://www.facebook.com/BienvenueOMonde/" target="_blank">
-        <img src="http://bienvenue-au-monde.fr/wp-content/uploads/2020/06/icons8-facebook-48.png" alt="facebook" class="facebook__icon">
+        <img src="https://bienvenue-au-monde.fr/wp-content/uploads/2020/06/icons8-facebook-48.png" alt="facebook" class="facebook__icon">
         <a class="instagram" href="https://www.instagram.com/bienvenueaum0nde/" target="_blank">
-        <img src="http://bienvenue-au-monde.fr/wp-content/uploads/2020/06/3721672-instagram_108066.png" alt="instagram" class="instagram__icon">
+        <img src="https://bienvenue-au-monde.fr/wp-content/uploads/2020/06/3721672-instagram_108066.png" alt="instagram" class="instagram__icon">
       </div>
     </div>
   </div>
